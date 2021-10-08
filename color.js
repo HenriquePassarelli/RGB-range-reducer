@@ -1,9 +1,9 @@
 
 let array = {
     color_dominant_2_rgb: [
+        139,
         0,
-        400,
-        255
+        0
     ],
 }
 let myColor = array.color_dominant_2_rgb;
@@ -68,44 +68,50 @@ function color(h, s, l) {
 
     console.log(h + "," + s + "," + l)
 
-    console.log(!(98 <= l))
+    console.log(s >= 26 && 15 <= l && l <= 30)
 
     switch (true) {
-        case 0 <= h && h <= 20 || 345 <= h && h <= 360:
-            if (0 <= s && s <= 10 || 0 <= l && l <= 10 || 98 <= l) {
-                if (0 <= s && s <= 10 && !(98 <= l) && !(0 <= l && l <= 10)) {
+        case 0 <= h && h <= 15 || 350 < h && h <= 360:
+            if (0 <= s || 0 <= l && l <= 10 || 98 <= l) {
+                if (s >= 26 && 15 <= l && l <= 30) {
+                    console.log("Brown")
+
+                } else if (0 <= s && s <= 10 && !(98 <= l) && !(0 <= l && l <= 10)) {
                     console.log("Gray")
                 }
                 else if (0 <= l && l <= 10) {
                     console.log("Black")
                 } else if (98 <= l) {
                     console.log("White")
-                }
+                } else console.log("Red")
                 break;
             } else {
-                console.log("Red")
+                console.log("3")
                 break;
             }
-        case 20 < h && h <= 60:
-            console.log("Orange")
+        case 15 < h && h <= 46:
+            if (s >= 26 && 10 <= l && l <= 40) {
+                console.log("Brown")
+            } else console.log("Orange")
             break;
-        case 60 < h && h <= 80:
-            console.log("Yellow")
+        case 46 < h && h <= 70:
+            //brown 20 to 50
+            if (s >= 26 && 10 <= l && l <= 30) {
+                console.log("Brown")
+            } else console.log("Yellow")
             break;
-        case 80 < h && h <= 180:
+        case 70 < h && h <= 182:
             console.log("Green")
             break;
-        case 180 < h && h <= 260:
+        case 182 < h && h <= 240:
             console.log("Blue")
             break;
-        case 260 < h && h <= 295:
+        case 240 < h && h <= 290:
             console.log("purple")
             break;
-        case 295 < h && h <= 347:
+        case 290 < h && h <= 350:
             console.log("Pink ")
             break;
-        case 0 <= s && s >= 10:
-
         default:
             console.log("Color not found")
             break;
@@ -114,3 +120,5 @@ function color(h, s, l) {
 
 }
 
+// brown 10 <= l && l <=30 && s >= 26
+//pink || l > = 60

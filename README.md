@@ -15,23 +15,25 @@
 ##### h- signal 
 > red - 0 to 20 
 > 
-> orange - 20 to 60 
+> orange - 20 to 50 
 > 
-> yellow - 60 to 80 
+> yellow - 50 to 80 
 > 
-> green - 80 to 180
+> green - 80 to 182
 > 
-> blue - 180 to 260
+> blue - 182 to 260
 > 
 > purple - 260 to 295
 > 
-> pink - 295 to 347
+> pink - 295 to 350
 > 
-> red - 347
+> red - 350
  
 ##### s -  signal 
 > s - 0 to 10 = gray
+> s- 26 = brown
  
 ##### l - signal
 > l- 100 = white
 > l- 0 to 10 = black
+> l- 15 to 30 = brown
