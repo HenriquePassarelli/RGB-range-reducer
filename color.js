@@ -97,8 +97,6 @@ function color(h, s, l) {
             return "Blue"
         case 240 < h && h <= 290:
             return "Purple"
-        /* case 290 < h && h <= 359:
-            return "Pink " */
         default:
             return "Color not found"
     }
