@@ -27,7 +27,7 @@
 > 
 > pink - 295 to 350
 > 
-> red - 350
+> red - 360
  
 ##### s -  signal 
 > s - 0 to 10 = gray
